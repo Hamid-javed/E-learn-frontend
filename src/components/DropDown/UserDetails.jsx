@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import { WebHandler } from "../../data/remote/WebHandler";
-
 import { URLS } from "../../data/remote/URL";
 import useClickOutside from "../../Hooks/UseClickOutside";
 import { useNavigate } from "react-router-dom";
