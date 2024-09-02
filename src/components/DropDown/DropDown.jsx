@@ -21,7 +21,7 @@ export default function DropDown({
   return (
     <div
       onMouseLeave={() => setShowDropDown(false)}
-      className="bg-white mt-72 shadow-lg rounded-md w-52 absolute right-0"
+      className="bg-white mt-72 shadow-lg rounded-md w-52 absolute right-0 z-20"
     >
       <div className="flex flex-col gap-3 items-start p-4">
         <button
