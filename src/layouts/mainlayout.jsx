@@ -4,17 +4,16 @@ import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import CheckLogin from "../components/CheckLogin";
 
-const mainlayout = () => {
-    return (
-        <>
-            <CheckLogin>
-                <Header />
-                <Outlet />
-                <Footer />
-            </CheckLogin>
-        </>
-    );
+const Mainlayout = () => {
+  return (
+    <>
+      <CheckLogin>
+        <Header />
+        <Outlet />
+        <Footer />
+      </CheckLogin>
+    </>
+  );
 };
 
-
-export default mainlayout
+export default Mainlayout;
