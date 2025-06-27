@@ -1,10 +1,10 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Toast from "../components/General/Toast";
 
 const ContactUs = () => {
   const [result, setResult] = React.useState("");
-  const [severity, setSeverity] = useState("")
-  const [showToast, setShowToast] = useState(false)
+  const [severity, setSeverity] = useState("");
+  const [showToast, setShowToast] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -22,8 +22,8 @@ const ContactUs = () => {
 
     if (data.success) {
       setResult("Form Submitted Successfully");
-      setShowToast(true)
-      setSeverity("success")
+      setShowToast(true);
+      setSeverity("success");
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -44,20 +44,25 @@ const ContactUs = () => {
               Need A Direct Line?
             </h2>
             <p className="text-gray-600 mb-4">
-              Ground Floor, Alpha-Software Technology Park, Canal Rd, near Canal
-              View Hotel, Rahim Yar Khan, Punjab 64200, Pakistan
+              94/B Umer bloack, Abbasia Town, Rahim Yar Khan, Punjab 64200,
+              Pakistan
             </p>
             <div className="flex items-center mb-2">
               <span role="img" aria-label="phone" className="mr-2">
                 📞
               </span>
-              <span>(+92) 3030279447</span>
+              <span>(+92) 3156107225</span>
             </div>
             <div className="flex items-center">
               <span role="img" aria-label="email" className="mr-2">
                 ✉️
               </span>
-              <span>Visit: https://www.helloworldtech.com/</span>
+              <span>
+                Visit:{" "}
+                <a href="https://hamids-portfolio.netlify.app/" target="_blank">
+                  https://hamids-portfolio.netlify.app/
+                </a>
+              </span>
             </div>
           </div>
 

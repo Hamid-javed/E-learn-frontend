@@ -24,6 +24,7 @@ const Login = () => {
       const { response, status } = await WebHandler(URLS.LOGIN, "POST", body);
       if (status === 200) {
         setIsLoggedIn(true);
+        console.log(response);
         setRes(response.message);
       } else {
         setShowToast(true);
@@ -36,26 +37,26 @@ const Login = () => {
     }
   };
 
-//   try {
-//     setLoading(true);
-//     const body = JSON.stringify(obj);
-    
-//     // Pass true for withCredentials in the WebHandler call
-//     const { response, status } = await WebHandler(URLS.LOGIN, "POST", body, true);
-  
-//     if (status === 200) {
-//       setIsLoggedIn(true);
-//       setRes(response.message);
-//     } else {
-//       setShowToast(true);
-//       setRes(response.message);
-//     }
-//   } catch (error) {
-//     console.error("Error sending data:", error);
-//   } finally {
-//     setLoading(false);
-//   }
-// }
+  //   try {
+  //     setLoading(true);
+  //     const body = JSON.stringify(obj);
+
+  //     // Pass true for withCredentials in the WebHandler call
+  //     const { response, status } = await WebHandler(URLS.LOGIN, "POST", body, true);
+
+  //     if (status === 200) {
+  //       setIsLoggedIn(true);
+  //       setRes(response.message);
+  //     } else {
+  //       setShowToast(true);
+  //       setRes(response.message);
+  //     }
+  //   } catch (error) {
+  //     console.error("Error sending data:", error);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // }
 
   useEffect(() => {
     if (isLoggedIn) {
@@ -100,7 +101,10 @@ const Login = () => {
                 id="user"
                 className="cursor-pointer w-4 h-4 text-[#0DAFE6] border-gray-300 focus:ring-[#0DAFE6]"
               />
-              <label className="ml-2 text-sm text-gray-700 cursor-pointer" htmlFor="user">
+              <label
+                className="ml-2 text-sm text-gray-700 cursor-pointer"
+                htmlFor="user"
+              >
                 Remember me
               </label>
             </div>
@@ -126,7 +130,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-
     </>
   );
 };

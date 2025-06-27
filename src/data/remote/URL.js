@@ -1,4 +1,4 @@
-const BASE_URL = 'https://elearningportal-56538109f664.herokuapp.com/'
+const BASE_URL = import.meta.env.VITE_URL;
 
 export const URLS = {
     CHECK: BASE_URL + 'auth/check',
@@ -11,11 +11,11 @@ export const URLS = {
     RESETPASSWORD: BASE_URL + 'auth/reset-password',
     CHANGEPASSWORD: BASE_URL + 'auth/change-password',
     SAVENEWCOURSE: BASE_URL + 'courses/saved/',
-    CHECKSAVED: BASE_URL+ 'courses/checksaved/',
+    CHECKSAVED: BASE_URL + 'courses/checksaved/',
     REMOVEDSAVED: BASE_URL + 'courses/saved/',
     SAVEDCOURSES: BASE_URL + 'courses/saved',
     GETCOURSEBYID: BASE_URL + 'courses/get/',
-    BUYCOURSE: BASE_URL  + 'courses/bought-courses/',
+    BUYCOURSE: BASE_URL + 'courses/bought-courses/',
     CHECKBOUGHT: BASE_URL + 'courses/checkbought/',
     BOUGHTCOURSES: BASE_URL + 'courses/bought-courses',
     FEATURED: BASE_URL + 'courses/featured',
@@ -23,5 +23,5 @@ export const URLS = {
     ADDREVIEW: BASE_URL + 'courses/reviews/',
     DELETEREVIEW: BASE_URL + 'courses/reviews/',
     VERIFYREVIEW: BASE_URL + 'courses/',
-    GETMENTOR:  BASE_URL + 'mentors/data/'
+    GETMENTOR: BASE_URL + 'mentors/data/'
 }

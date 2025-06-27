@@ -82,13 +82,15 @@ const Footer = () => {
           <div className="text-center sm:text-center sm:flex-col lg:text-left md:text-left items-center sm:items-center">
             <h3 className="text-md font-semibold">CONTACT US</h3>
             <p className="text-gray-600 text-sm">
-              Address: Ground Floor, Alpha-Software Technology Park,
-              <br /> Canal Rd, near Canal View Hotel,
+              Address: 94/B Umer bloack, Abbasia Town,
               <br /> Rahim Yar Khan, Punjab 64200, Pakistan
               <br />
-              Tel: + (92) 3030279447
+              Tel: + (92) 3156107225
               <br />
-              Mail: https://www.helloworldtech.com/
+              Mail:{" "}
+              <a href="https://hamids-portfolio.netlify.app/" target="_blank">
+                https://hamids-portfolio.netlify.app/
+              </a>
             </p>
             <div className="mt-3 flex md:text-left sm:justify-start space-x-3 text-gray-600">
               <a href="#" className="text-blue-500 hover:text-[#0DAFE6]">
